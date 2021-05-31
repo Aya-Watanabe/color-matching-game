@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Color Matching Game</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Color Matching Game</h1>
+
+        <form id="difficulty-form">
+            <input name="difficulty" type="radio" value="4" onchange="selectDifficulty()" checked><label for="radio1">Easy</label>
+            <input name="difficulty" type="radio" value="6" onchange="selectDifficulty()"><label for="radio2"> Normal</label>
+            <input name="difficulty" type="radio" value="8" onchange="selectDifficulty()"><label for="radio3"> Harder</label>
+            <input name="difficulty" type="radio" value="10" onchange="selectDifficulty()"> <label for="radio4">Hardest</label>
+        </form>
+
+        <div class="btn-container">
+            <button class='start-btn'>Start!</button>
+            <button class='restart-btn'>Restart</button>
+        </div>
+
+        <div class="contents">
+            <div class="question"></div> 
+        </div>
+
+        <div class="answerBtnContainer"><!-- Button dinamically added--></div>
+
+        <div class="result-container">
+            <div>Your Answer: <span class="user-answer"></span></div>
+            <div class="result-icon"><span class="result">?</span></div>
+            <div>Answer: <span  class="correct-answer"></span></div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,85 @@
+
+        body{
+            font-family: 'Sigmar One', cursive;
+            background-image: url("images/watermark.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .container{
+            max-width:900px;
+            height:700px;
+            margin:0 auto;
+            background-color:white;
+            margin-top:1rem;
+        }
+
+        h1{
+          margin:0;
+          padding:.5rem 0;
+        }
+
+        button{
+            font-family: 'Sigmar One', cursive;
+        }
+
+        .btn-container, h1, form, .color-btns{
+            text-align:center;
+        }
+
+        .question{
+            border:1px solid black;
+            width:350px;
+            height:150px;
+            margin:0 auto;
+            margin-top:10px;
+        }
+       
+        .answerBtnContainer, .result-container{
+            width:500px;
+            margin:0 auto;
+        }
+
+        .answerBtnContainer p{
+            text-align: center;
+        }
+
+        .answerBtnContainer button{
+            color: white;
+            border:none;
+            padding:5px;
+            width:100px;
+            text-transform: capitalize;
+            border-radius: 5px;
+            margin:1px;
+        }
+
+        .answerBtnContainer button:hover{
+            cursor:pointer;
+        }
+        
+        .hide{
+            display:none;
+        }
+
+        .result-container{
+            max-width:400px;
+            margin-top:10px;
+        }
+
+        .user-answer > div, .correct-answer > div{
+            display:inline-block;
+            color:white;
+            padding:5px;
+            width:50px;
+            text-transform: capitalize;
+            border-radius: 5px;
+            margin:1px;
+            text-align:center;
+            font-size: .7rem;
+        }
+
+        .result-icon{
+            text-align:center;
+            margin:10px 0;
+        }
+
